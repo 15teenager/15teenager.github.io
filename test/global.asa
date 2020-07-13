@@ -1,0 +1,16 @@
+<SCRIPT LANGUAGE = "VBScript"  RUNAT = "Server">
+
+SUB Application_OnStart
+END SUB
+
+SUB Session_OnStart
+	Response.Redirect "/index.asp"
+END SUB
+
+SUB Session_OnEnd
+END SUB
+
+SUB Application_OnEnd
+END SUB
+
+</SCRIPT>

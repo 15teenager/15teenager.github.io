@@ -1,0 +1,109 @@
+班级网站系统
+现在，你只需要十几分钟就可以创建你的班级网站了，为什么不行动呢？
+
+
+
+版权申明:
+
+Copyright 2002 王志军.  All Rights Reserved.
+
+ 欢迎你选择本软件。本软件是一个纯免费软件，如果因此造成数据丢失，
+本人不负任何责任。如果未经本人同意，进行商业行为，将构成侵权。
+如果你要修改或向朋友推荐，请加入这一段申明。
+
+联系信息:
+王志军
+zhijun_wong@yahoo.com
+
+
+
+软件简介：
+本软件是一个功能完备的班级网站，实现功能有用户资料管理、用户权限设置、讯息传递、
+影集建立和照片上传、发送邮件，包含新闻、通讯录、影集、论坛、管理和关于六个版面。
+详细信息请见about.asp。
+本软件是为我的高中同学会建立网站时开发的，现已经正常运行。请放心使用。
+
+运行环境：ASP（要求安装Jmail控件） + CGI（要求安装CGI.pm包）
+
+
+
+安装说明：
+只要将要软件包所有文件和目录上传到用户指定目录即可。关于目录权限设定这里不详述了。
+
+用户需要设置或修改以下文件：
+1。config.inc 指定用户基本参数；
+2。用户可在class.mdb中的city表增加或修改城市名，当前已有的城市：北京、上海、深圳、重庆、西安、武汉（可选）；
+3。更换logo.gif;
+4。修改about.asp和index.asp有关文字说明（可选）。
+
+
+
+使用说明：
+1。用户可以用帐号：admin，密码：abc进入系统。
+2。增加一个管理员帐号；
+3。用这个管理员帐号重新登录，删除所有其它帐号，创建本班用户名单；
+4。在“通讯录”内修改用户详细信息。
+
+
+
+文件清单：
+readme.txt		就是本文件
+
+style.css               CSS格式文件
+global.asa		asa文件
+config.inc		网站参数文件
+common.inc		常用函数文件
+
+index.asp		登录页面
+login.asp		登录管理
+counter.asp		计数器
+
+timeout.asp		超时提示页面
+timeout2.asp		超时提示页面
+
+main.asp		主窗口
+header.asp		页头
+message.asp		消息管理
+home.asp		包括在线用户和新闻页
+userlist.asp		在线用户
+
+news.asp(pageno)	新闻列表
+news_info.asp		新闻显示
+news_post.asp		发布、修改新闻
+news_erase.asp		删除新闻
+
+forum.asp(pageno)	帖子列表
+forum_info.asp		帖子显示
+forum_post.asp		发布、修改帖子
+forum_erase.asp		删除帖子
+
+address.asp		用户清单和资料显示
+profile.asp		用户资料修改
+
+album.asp		影集清单
+album_info.asp		单个影集显示
+album_post.asp		建立、修改影集
+album_erase.asp		删除影集
+photo_post.asp		上传、修改照片 
+photo_erase.asp		删除照片
+upload.asp		上传照片文件
+upload.cgi		上传文件
+del.cgi			 删除目录或文件
+
+manage.asp		网站管理
+user_post.asp		用户管理
+backup.cgi		数据库备份
+
+about.asp		关于网站
+
+mail.asp		发邮件
+
+
+致谢：
+    本软件文件上传部分参考过Alex Krohn, and Patrick Krohn的文件管理器
+fileman1.zip(http://www.codechina.net/down/fileman1.zip)和CGI工作室netup.zip(bbss.126.com),
+论坛部分参考过John Penfold的tradeforum(http://www.asp-dev.com/)，
+记数器部分参考过Chris Williams的PowerASP_Counter(chris@powerasp.com),
+在此向他们表示感谢。
+
+
